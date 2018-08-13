@@ -1,0 +1,92 @@
+<div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
+
+      <div class="sidebar-wrapper">
+            <div class="logo">
+            <img src="/assets/images/d1.jpeg" width="130px"><br><br>
+                <a>
+                    DR. Asif Bashir
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li><a routerLink="/myappointments" class="Active">
+                Appointments
+                
+                </a>
+                </li>
+                
+                <li><a routerLink="/myprofile" class="Active">
+                
+                My Profile</a></li>
+                <li><a routerLink="/viewpatients" class="Active">
+                
+                View Patient</a></li>
+                <li><a routerLink="/patienthistory" class="Active">
+                
+                Patient History</a></li>
+                <li><a routerLink="/addprescription" class="Active">
+                
+                Add Prescription</a></li>
+                <li><a routerLink="/dfeedback" class="Active">
+                
+                Feedback</a></li>
+                <li><a routerLink="/dlogout" class="Active">
+                
+                Logout</a></li>
+
+
+                
+             </ul>
+      </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    
+                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <h4> My Profile</h4>
+                    
+                </div>
+            
+            </div>
+        </nav>
+        <br>
+<div class="container-fluid">
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+  <form   align="center" 
+  (submit)="updateprofile(profile._id)" id="form">
+      <h2 align="center" style="margin-top: 1px">My Profile </h2> <br>
+      <img [src]="imageUrl" style="width: 250px;height: 200px;"><br><br>
+      <input type="file" name="pic" [(ngModel)]="pic" accept="image/*" style="padding-left: 120px;"
+    (change)="handleFileInput($event.target.files)">
+      <input type="text" [(ngModel)]="profile.name" name="name"class="form-control"  placeholder="Enter Name">
+      <input type="text" [(ngModel)]="profile.email" name="email" class="form-control"  placeholder="Email" >
+      <input type="text" [(ngModel)]="username" name="username" class="form-control"  placeholder="Enter UserName">
+      <input type="password" [(ngModel)]="password" name="password" class="form-control"  placeholder="Password" >
+      <input type="text" [(ngModel)]="phone" placeholder="Enter Phone#" name="phone" class="form-control">
+      <input type="text" [(ngModel)]="speclization" placeholder="speclization" name="speclization" class="form-control">
+      <input type="time" [(ngModel)]="time"  name="time" class="form-control">
+
+
+   
+    <button type="submit" class="btn">Save Changes</button>
+    
+  </form>
+  </div>
+  <div class="col-md-4"></div>
+
+</div> 
+<br>
+<br>
+  
+    </div>
+</div>
+        
+
+
+        

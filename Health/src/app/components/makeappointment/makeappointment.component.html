@@ -1,0 +1,83 @@
+<h1 style="text-align: center; color:Orange;"><b>Patient dashboard</b></h1>
+<br>
+<div class="container-fluid">
+  <img src="assets/images/docdash.jpg" style="width:1280px;height:300px;">
+</div>
+
+
+    
+        
+      
+      <!--/.navbar-header-->
+      <div class="container-fluid">
+        <nav>
+          <ul class="navset">
+            <li><a routerLink="/myprofilepatient" class="Active">My Profile</a></li>
+            <li><a routerLink="/medicalhistorypatient">Medical History</a></li>	
+            <li><a routerLink="/makeappointment">Make Appointment</a></li>
+            <li><a routerLink="/cancelappointment">Cancel Appointment</a></li>
+            <li><a routerLink="/searchdoctor">Search Doctor</a></li>
+            <li><a routerLink="/feedback">Feedback</a></li>
+            <li><a routerLink="/logout">LogOut</a></li>
+            
+          </ul>
+          
+        </nav>
+           
+      </div>
+      <br>
+      <br>
+      <div class="container-fluid">
+<div class="col-md-4">
+</div>
+
+<div class="col-md-4" style="background: #6495ed">
+<form  align="center" (submit)="getemp()" >
+
+  <h2 align="center" style="margin-top: 1px">Appointment Form </h2> <br>
+    
+
+  <select [(ngModel)]="speclization" name="speclization"  >
+      
+    <option ng-option value="bone" [selected]="enable()">bone</option>
+    <option ng-option value="heart" [selected]="enable()">heart</option>
+    <option ng-option value="normal" [selected]="enable()">normal</option>
+    <option ng-option value="eyes" [selected]="enable()">eyes</option>
+  </select>
+
+ <br>
+    
+   
+    <button type="submit" class="check" (click)="Click();"  disabled="{{add}}" >Check</button><br>
+    <select [(ngModel)]="filter" name="filter" >
+    <option ng-option value="" *ngFor="let doc of doctor; let i=index" [selected]="enableaddbutton(doc._id)" > Dr.{{doc.name}}</option>
+  </select>
+    <!-- <div class="change doctor" *ngFor="let doc of doctor; let i=index" (click)="enableaddbutton(doc._id)">Dr.{{doc.name}}
+     <br>
+     <br>
+     </div>
+    <div> -->
+      <br>
+      
+      <button type="button"  (click)="btnClick();" disabled="{{addbutton}}"> Make Appointment</button> 
+     
+  
+        
+    
+
+    
+    
+</form>
+  
+
+</div>
+
+<div class="col-md-4"></div>
+
+</div> 
+<br>
+<br>
+
+
+
+      

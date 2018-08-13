@@ -1,0 +1,28 @@
+<br>
+<div class="container-fluid" style="background-image: url(assets/images/pat3.jpg);">
+<div class="col-md-4">
+</div>
+<div class="col-md-4" style="background: #6495ed">
+  <form   align="center" 
+  (submit)="onRegisterSubmit()" id="form">
+      <h2 align="center" style="margin-top: 1px">SignUp Form </h2> <br>
+      <input type="text" [(ngModel)]="name" name="name"class="form-control"  placeholder="Enter Name">
+      <input type="text" [(ngModel)]="username" name="username" class="form-control"  placeholder="Enter UserName">
+      <input type="text" [(ngModel)]="email" name="email" class="form-control"  placeholder="Email" >
+      <input type="password" [(ngModel)]="password" name="password" class="form-control"  placeholder="Password" >
+      <input type="text" [(ngModel)]="address" name="address" class="form-control"  placeholder="Address" >
+      <input type="text" [(ngModel)]="phone" name="phone" class="form-control"  placeholder="Phone" >
+      <input type="text" [(ngModel)]="gender" name="gender" class="form-control"  placeholder="Gender" >
+      <input type="text" [(ngModel)]="age" name="password" class="form-control"  placeholder="Age" >
+
+   
+    <button type="submit" class="btn">Sign Up</button>
+    
+  </form>
+  </div>
+  <div class="col-md-4"></div>
+
+</div> 
+<br>
+<br>
+  

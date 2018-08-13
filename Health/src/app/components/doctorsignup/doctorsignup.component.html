@@ -1,0 +1,31 @@
+<br>
+<div class="container-fluid" style="background-image: url(assets/images/pat3.jpg);">
+<div class="col-md-4">
+</div>
+<div class="col-md-4" style="background: #6495ed">
+  <form   align="center" 
+  (submit)="onRegisterSubmit()" id="form">
+      <h2 align="center" style="margin-top: 1px">SignUp Form </h2> <br>
+      <img [src]="imageUrl" style="width: 250px;height: 200px;"><br><br>
+      <input type="file" name="pic" [(ngModel)]="pic" accept="image/*" style="padding-left: 120px;"
+    (change)="handleFileInput($event.target.files)">
+      <input type="text" [(ngModel)]="name" name="name"class="form-control"  placeholder="Enter Name">
+      <input type="text" [(ngModel)]="email" name="email" class="form-control"  placeholder="Email" >
+      <input type="text" [(ngModel)]="username" name="username" class="form-control"  placeholder="Enter UserName">
+      <input type="password" [(ngModel)]="password" name="password" class="form-control"  placeholder="Password" >
+      <input type="text" [(ngModel)]="phone" placeholder="Enter Phone#" name="phone" class="form-control">
+      <input type="text" [(ngModel)]="speclization" placeholder="speclization" name="speclization" class="form-control">
+      <input type="time" [(ngModel)]="time"  name="time" class="form-control">
+
+
+   
+    <button type="submit" class="btn">Sign Up</button>
+    
+  </form>
+  </div>
+  <div class="col-md-4"></div>
+
+</div> 
+<br>
+<br>
+  

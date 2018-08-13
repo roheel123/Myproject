@@ -1,0 +1,53 @@
+<!-- banner -->
+
+<!--//banner -->
+<!-- about -->
+<div class="agile-about w3ls-section">
+<!-- about-bottom -->
+<div class="agileits-about-btm">
+<h3 class="heading-agileinfo">Welcome To Medecure!<span>We offer extensive medical procedures to outbound and inbound patients.</span></h3>
+
+
+	<div class="container-fluid slider">
+		<div class="w3-flex">
+		<div class="col-md-4 col-sm-4 ab1 agileits-about-grid1 slide heap" *ngFor="let doc of doctor">
+			<h4 class="agileinfo-head">DR.{{doc.name}} </h4>
+			<img src="assets/images/d1.jpeg" style="width: 120px;" class="img"><br><br>
+			<h4> <b>Email</b>  {{doc.email}} </h4>
+			<h4> <b>Username:</b> {{doc.username}}  </h4>
+			<h4> <b>Speclization: </b> {{doc.speclization}} </h4>
+			<h4> <b>Phone: </b> {{doc.phone}} </h4>
+			<br>
+			 <form method="get" action="/login">
+            <a routerLink="/Login" class="app">Make an appointment</a>
+              </form>
+
+
+			
+		</div>
+		</div>
+		</div></div></div>
+		
+<!-- emergency -->
+<div class="emergency_cases_w3ls">
+<div class="emergency_cases_bt">
+<div class="container">
+<div class="emergency_cases_top">
+	<div class="col-md-6 emergency_cases_w3ls_left">
+		<h4>Doctor Timings</h4>
+		<h6>Monday - Thusrsday&nbsp;<span class="eme">9.00 - 18.00</span></h6>
+		<h6>Friday&nbsp;<span class="eme">9.00 - 12.00</span></h6>
+		<h6>Saturday - Sunday&nbsp;<span class="eme">9.00 - 15.00</span></h6>
+	</div>
+	<div class="col-md-6 emergency_cases_w3ls_right">
+		<h4>Emergency Cases</h4>
+		<h5><i class="fa fa-phone" aria-hidden="true"></i>(051) 5464680</h5>
+		<p>Your treatment plan is designed for steady progress, with every phase promptly implemented.</p>
+	</div>
+	
+	<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+</div>
+<!-- //emergency -->

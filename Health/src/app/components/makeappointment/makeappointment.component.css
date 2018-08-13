@@ -1,0 +1,104 @@
+ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 18.51px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 35px;
+    background-color: #B0C4DE;
+}
+input[type=text], input[type=password],input[type=date],input[type=time],select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #E6E6FA;
+    border: 2px solid #bdc7d8 ;
+    border-radius: 10px;
+
+}
+input[type=Email],input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #E6E6FA;
+    border: 2px solid #bdc7d8 ;
+    border-radius: 10px;
+}
+
+
+.check{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.container .btn:hover {
+    background-color: #A2A2A2;
+    color:white ;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 12.50%;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.doctor{
+
+    display: inline-block;
+    background-color:#DCDCDC;	
+    color: black;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 0px;
+}
+.change:focus {
+    background-color:red;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 30%;
+    }
+
+
+
+}
